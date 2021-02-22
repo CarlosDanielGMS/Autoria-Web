@@ -20,8 +20,8 @@
     <title>Supernatural: galeria de imagens</title>
 </head>
 
-<body class="text-light bg-dark">
-    <header class="container">
+<body class="container text-light bg-dark">
+    <header>
         <div class="row">
             <nav class="navbar navbar-expand-sm navbar-dark">
                 <a class="navbar-brand">Supernatural</a>
@@ -46,55 +46,68 @@
         </div>
 
         <h1 class="text-center mb-0"><strong>Supernatural: galeria de imagens</strong></h1>
-        <p class="text-center mb-0">Veja como são os principais personagens!</p>
+        <p class="text-center mt-0">Veja como são os principais personagens!</p>
     </header>
 
-    <main class="container">
-        <article>
-            <div>
-                <h3 class="capitulo">PROTAGONISTAS</h3>
-                <figure>
-                    <img src=".\Mídias\Supernatural-Imagem_1.jpg">
-                    <figcaption>Sam e Dean</figcaption>
-                </figure>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src=".\Mídias\Supernatural-Imagem_1.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sam e Dean</h5>
+                        <p>Protagonistas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src=".\Mídias\Supernatural-Imagem_2.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>John</h5>
+                        <p>Pai dos protagonistas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src=".\Mídias\Supernatural-Imagem_3.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mary</h5>
+                        <p>Mãe dos protagonistas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src=".\Mídias\Supernatural-Imagem_4.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Castiel</h5>
+                        <p>Anjo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src=".\Mídias\Supernatural-Imagem_5.jpg">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Crowley</h5>
+                        <p>Demônio</p>
+                    </div>
+                </div>
             </div>
-
-            <div>
-                <h3 class="capitulo">PAI DOS PROTAGONISTAS</h3>
-                <figure>
-                    <img src=".\Mídias\Supernatural-Imagem_2.jpg">
-                    <figcaption>John</figcaption>
-                </figure>
-            </div>
-
-            <div>
-                <h3 class="capitulo">MÃE DOS PROTAGONISTAS</h3>
-                <figure>
-                    <img src=".\Mídias\Supernatural-Imagem_3.jpg">
-                    <figcaption>Mary</figcaption>
-                </figure>
-            </div>
-
-            <div>
-                <h3 class="capitulo">ANJO</h3>
-                <figure>
-                    <img src=".\Mídias\Supernatural-Imagem_4.jpg">
-                    <figcaption>Castiel</figcaption>
-                </figure>
-            </div>
-
-            <div>
-                <h3 class="capitulo">DEMÔNIO</h3>
-                <figure>
-                    <img src=".\Mídias\Supernatural-Imagem_5.jpg">
-                    <figcaption>Crowley</figcaption>
-                </figure>
-            </div>
-        </article>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
     </main>
 
-    <footer class="container">
-        <p id="creditos">Fonte: ferramenta de busca por imagens do Google</p>
+    <footer class="pt-3">
+        <p>Fonte: ferramenta de busca por imagens do Google</p>
     </footer>
 </body>
 
